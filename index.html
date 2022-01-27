@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--	Font awesome	-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--	Custom CSS 		-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+
+	<title>Raffy Shop</title>
+
+</head>
+<body>
+
+	<nav class="nav bg-dark-light">
+	  <a class="nav-link br-head" style="" >INDIA'S FASTEST ONLINE SHOPPING DESTINATION</a>
+	  <a class="nav-link itm-1" href="#">MY ACCOUNT</a>
+	  <a class="nav-link itm-2" href="#">LOGIN/REGISTER</a>
+	</nav>
+
+	<!-- Just an image -->
+	<nav class="navbar sticky-top navbar-light bg-light p-4">
+	  <a class="navbar-brand" href="">
+	    <img src="img/logo-1-1.png" class="img-responsive logo" alt="Logo">
+	  </a>
+  	 	
+  		<ul class="nav nav-center">
+			<li class="nav-item">
+			   <a class="nav-link text-grey" href="#">HOME</a>
+			</li>
+			<li class="nav-item">
+			   <a class="nav-link text-grey" href="#">SHOP</a>
+			</li>
+			<li class="nav-item">
+			   <a class="nav-link text-grey" href="#">MEDIA</a>
+			</li>
+			<li class="nav-item">
+			   <a class="nav-link text-grey" href="#">BLOG</a>
+			</li>
+			<li class="nav-item">
+			   <a class="nav-link text-grey" href="#">PAGES</a>
+			</li>
+		</ul>
+
+		<ul class="nav m-p">
+			<li class="nav-item">
+			   <a class="nav-link text-grey ico-1" href="#">
+			   		<i class="far fa-heart"></i>
+			   </a>
+			</li>
+			<li class="nav-item">
+			   <a class="nav-link text-grey ico-1" href="#">
+			   		<i class="fas fa-redo"></i>
+			   </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link ico-1" href="#">
+					<i class="fas fa-shopping-bag"></i>
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+	<!-- Navs -->
+	<nav class="navbar navbar-primary bg-primary p-2 justify-content-center">
+		<div class="dropdown mr-3">
+			<button class="btn btn-secondary rounded-0 text-left" type="button" id="dropdownMenuButtonTopCag" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    	<i class="fas fa-bars"></i> TOP CATEGORIES
+			</button>
+			<div class="dropdown-menu rounded-0" aria-labelledby="dropdownMenuButtonTopCag">
+				<a class="dropdown-item" href="#">FASHION</a>
+		    	<a class="dropdown-item" href="#">ELECTRONICS</a>
+		    	<a class="dropdown-item" href="#">BAGS</a>
+		    	<a class="dropdown-item" href="#">MOBILES</a>
+		    	<a class="dropdown-item" href="#">SAREES</a>
+		    	<a class="dropdown-item" href="#">TELEVISION</a>
+		    	<a class="dropdown-item" href="#">SUNGLASSES</a>
+		    	<a class="dropdown-item" href="#">WATCHES</a>
+			</div>
+		</div>
+		<form class="form-inline">
+			<input id="search-navbar" class="form-control rounded-pill-left" type="search" placeholder="Search products .." aria-label="Search">
+			<div class="dropdown">
+  				<button class="btn btn-secondary dropdown-toggle rounded-0" type="button" id="dropdownMenuButtonCategories" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    				All Categories
+  				</button>
+  				<div class="dropdown-menu rounded-0" aria-labelledby="dropdownMenuButton" id="menuButtonCategories">
+    				<a class="dropdown-item" href="#">Uncategorized</a>
+    				<a class="dropdown-item" href="#">Accesories</a>
+    				<a class="dropdown-item" href="#">Bags</a>
+    				<a class="dropdown-item" href="#">Belts</a>
+    				<a class="dropdown-item" href="#">Clothing</a>
+    				<a class="dropdown-item" href="#">Dresses</a>
+    				<a class="dropdown-item" href="#">Electronics</a>
+    				<a class="dropdown-item" href="#">Fashion</a>
+    				<a class="dropdown-item" href="#">Favors</a>
+    				<a class="dropdown-item" href="#">Fitness Equipment</a>
+    				<a class="dropdown-item" href="#">Jewelry</a>
+    				<a class="dropdown-item" href="#">Mobile</a>
+    				<a class="dropdown-item" href="#">Outfits</a>
+    				<a class="dropdown-item" href="#">Sarees</a>
+    				<a class="dropdown-item" href="#">Shoes</a>
+    				<a class="dropdown-item" href="#">Sunglasses</a>
+    				<a class="dropdown-item" href="#">Televesion</a>
+    				<a class="dropdown-item" href="#">Wallet</a>
+    				<a class="dropdown-item" href="#">Watches</a>
+  				</div>
+			</div>
+			<button class="btn btn-dark my-2 my-sm-0 rounded-pill-right" type="submit">
+				<i class="fas fa-search" style="font-size: 16px;"></i>
+			</button>
+		</form>
+		<span id="text-nav" class="navbar-text f-avel ml-3 text-center">
+    		10% on card & Upto 15% cashup
+  		</span>
+	</nav>
+	<!-- End Navs -->
+
+	<!-- Carousel -->
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+	  <ol class="carousel-indicators">
+	    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+	    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+	  </ol>
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	      <img src="img/sample-1-1.jpg" class="d-block w-100" alt="...">
+	    </div>
+	    <div class="carousel-item">
+	      <img src="img/sample-2-1.jpg" class="d-block w-100" alt="...">
+	    </div>
+	  </div>
+	  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+
+	</div>
+	<!-- End Carousel -->
+
+	<div class="container">
+		<!-- Card Images -->
+		<div class="row mt-5">
+			<div class="col-md">
+				<div id="ico-1" class="card rounded-circle card-margin-left-4">
+					<div class="card-body">
+						<i id="ico-1-1" class="fas fa-shipping-fast ico-size-1"></i>
+					</div>
+				</div>
+				<h5 class="text-5 mt-3" id="label-1-1">DISCOUNTS EVERYDAY</h5>
+				<h6 class="text-6" id="label-1-2">Get Discount on Selected Items</h6>
+			</div>
+			<div class="col-md">
+				<div id="ico-2" class="card rounded-circle card-margin-left-4">
+					<div class="card-body">
+						<i id="ico-2-2" class="fas fa-piggy-bank ico-size-1"></i>
+					</div>
+				</div>
+				<h5 class="text-5 mt-3" id="label-2-1">MONEY BACK GUARANTEE</h5>
+				<h6 class="text-6" id="label-2-2">Save More With Our Daily Offers</h6>
+			</div>
+			<div class="col-md">
+				<div id="ico-3" class="card rounded-circle card-margin-left-4">
+					<div class="card-body">
+						<i id="ico-3-3" class="fas fa-headset ico-size-1"></i>
+					</div>
+				</div>
+				<h5 class="text-5 mt-3" id="label-3-1">FREE SHIPPING WORLDWIDE</h5>
+				<h6 class="text-6" id="label-3-2">Get 24/7 Online Support</h6>
+			</div>
+		</div>
+		<!-- End Card Images -->
+	</div>
+
+	<h3 class="text-center mt-5"><b>TOP CATEGORIES</b></h3>
+	<div class="row justify-content-center">
+		<div class="col-1">
+			<hr style="font-size: 10px;">
+		</div>
+		<div class="col-1">
+			<b>.</b>
+		</div>
+		<div class="col-1">
+			<hr>
+		</div>
+	</div>
+
+	<!-- Dont know how to create one -->
+
+	<!-- Navlinks -->
+	<div class="">
+		<ul class="nav justify-content-center">
+			<li class="nav-item">
+			   <a class="nav-link text-black active" href>JEWELRY</a>
+			</li>
+			<li class="nav-item">
+			   <a class="nav-link text-black" href>ACCESSORIES</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link text-black" href>FASHION</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link text-black" href>OUTFITS</a>
+			</li>
+		</ul>
+	</div>
+	<!-- End Navlinks -->
+
+	<!-- Items -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md">
+				<div class="card rounded-0" id="item-1">
+					<div class="borde rounded-0 bg-dark p-1 text-white f-avel" style="width:40%;">
+						FEATURED
+						<i class="fas fa-thumbtack ml-2"></i>
+					</div>
+					<img class="card-img-top" src="img/15-7-1-300x300.jpg" alt="Card Image cap">
+					<div class="card-body">
+						<div id="rating-card" class="card-text text-center" style="font-size: 10px;">
+							<span class="fa fa-star checked" style="color: orange;"></span>
+							<span class="fa fa-star checked" style="color: orange;"></span>
+							<span class="fa fa-star checked" style="color: orange;"></span>
+							<span class="fa fa-star checked" style="color: orange;"></span>
+							<span class="fa fa-star"></span>
+						</div>
+						<div class="card-title f-avel text-center">
+							Maecenas Ullamcorper
+						</div>
+						<div class="card-text f-avel text-center" id="cd-t">
+							<b>$300.00</b>
+						</div>
+						<!-- Hide -->
+						<div class='card-text f-avel text-center text-white' id='action'>
+							<i id="ico-cart" class='fab fa-opencart border p-1' style="background-color: #080505"></i>
+							<i id="ico-view" class='fas fa-eye border p-1' style="background-color: #EAECEE;"></i>
+							<i id="ico-heart" class='far fa-heart border p-1' style="background-color: #EAECEE;"></i>
+							<i id="ico-compare" class='fas fa-chart-pie border p-1' style="background-color: #EAECEE;"></i>
+						</div>
+						<!-- -->
+
+						<!-- Modal -->
+						<div class="modal fade rounded-0" id="viewModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header border-0">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          <span aria-hidden="true">&times;</span>
+						        </button>
+						      </div>
+						      <div class="modal-body">
+						        <div class="row">
+						        	<div class="col-md-4">
+						        		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+										  <div class="carousel-inner">
+										    <div class="carousel-item active">
+										      <img src="../task-2/img/1-8-1-300x300.jpg" class="d-block w-100" alt="...">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="../task-2/img/12-7-1-300x300.jpg" class="d-block w-100" alt="...">
+										    </div>
+										    <div class="carousel-item">
+										      <img src="../task-2/img/15-7-1-300x300.jpg" class="d-block w-100" alt="...">
+										    </div>
+										  </div>
+										  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+										    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										    <span class="sr-only">Previous</span>
+										  </a>
+										  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+										    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+										    <span class="sr-only">Next</span>
+										  </a>
+										</div>
+						        	</div>
+						        	<div class="col-md-8">
+						        		<h2>Donec Quam Felis</h2>
+						        		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						        		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						        		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						        		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						        		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						        		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						        	</div>
+						        </div>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+						<!-- End modal -->
+					</div>
+				</div>
+			</div>
+			<div class="col-md">
+				<div class="card" id="item-2">
+					<img class="card-img-top" src="img/18-6-1-300x300.jpg" alt="Card Image cap">
+					<div class="card-body">
+						<div class="card-title f-avel text-center">
+							Maecenas Ullamcorper
+						</div>
+						<div class="card-text f-avel text-center">
+							<b>$60.00</b>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md">
+				<div class="card" id="item-3">
+					<img class="card-img-top" src="img/20-6-1-300x300.jpg" alt="Card Image cap">
+					<div class="card-body">
+						<div class="card-title f-avel text-center">
+							Primis consequat neque
+						</div>
+						<div class="card-text f-avel text-center">
+							<b>$130.00</b>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md">
+				<div class="card" id="item-4">
+					<img class="card-img-top" src="img/22-4-1-300x300.jpg" alt="Card Image cap">
+					<div class="card-body">
+						<div class="card-title f-avel text-center">
+							Facilit Conobia
+						</div>
+						<div class="card-text f-avel text-center">
+							<b>$35.00</b>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row mt-4">
+			<div class="col-md">
+				<div class="card" id="item-5">
+					<img class="card-img-top" src="img/24-4-1-300x300.jpg" alt="Card Image cap">
+					<div class="card-body">
+						<div class="card-title f-avel text-center">
+							Facilit Conobia
+						</div>
+						<div class="card-text f-avel text-center">
+							<b>$35.00</b>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md">
+				<div class="card" id="item-6">
+					<img class="card-img-top" src="img/26-3-1-300x300.jpg" alt="Card Image cap">
+					<div class="card-body">
+						<div class="card-title f-avel text-center">
+							Facilit Conobia
+						</div>
+						<div class="card-text f-avel text-center">
+							<b>$35.00</b>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md">
+				<div class="card" id="item-7">
+					<img class="card-img-top" src="img/28-3-1-300x300.jpg" alt="Card Image cap">
+					<div class="card-body">
+						<div class="card-title f-avel text-center">
+							Facilit Conobia
+						</div>
+						<div class="card-text f-avel text-center">
+							<b>$35.00</b>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md">
+				<div class="card" id="item-8">
+					<img class="card-img-top" src="img/30-3-1-300x300.jpg" alt="Card image cap">
+					<div class="card-body">
+						<div class="card-title f-avel text-center">
+							Facilit Conobia
+						</div>
+						<div class="card-text f-avel text-center">
+							<b>$35.00</b>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Items -->
+
+	<!-- Items - 1 -->
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-md">
+				<div class="card rounded-0">
+                  	<img class="card-img-top" src="img/sub-banner-1-1-1.jpg" alt="Card image" >
+                  	<div class="card-img-overlay">
+                  		<div class="card-body">
+							<h4 class="card-text" id="s-1-1">Apple Laptop</h4>
+							<h6 class="card-text a-2">Free Services</h6>
+							<button class="card-text btn btn-primary rounded-0 a-2">Shop Now</button>
+						</div>
+                  	</div>
+				</div>
+			</div>
+			<div class="col-md">
+				<div class="card rounded-0">
+                  	<img class="card-img-top" src="img/sub-banner-2-1-1.jpg" alt="Card image" >
+                  	<div class="card-img-overlay">
+                  		<div class="card-body">
+							<h4 class="card-text" id="s-1-1">Smartphone</h4>
+							<h6 class="card-text a-2">Free Services</h6>
+							<button class="card-text btn btn-primary rounded-0 a-2">Shop Now</button>
+						</div>
+                  	</div>
+				</div>
+			</div>
+			<div class="col-md">
+				<div class="card rounded-0">
+                  	<img class="card-img-top" src="img/sub-banner-3-1-1.jpg" alt="Card image" >
+                  	<div class="card-img-overlay">
+                  		<div class="card-body">
+							<h4 class="card-text" id="s-1-1">Video Game</h4>
+							<h6 class="card-text a-2">Free Services</h6>
+							<button class="card-text btn btn-primary a-2 rounded-0">Shop Now</button>
+						</div>
+                  	</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="row mt-4">
+			<div class="col-md">
+				<div class="card rounded-0">
+                  	<img class="card-img-top" src="img/sub-banner-4-1.jpg" alt="Card image" >
+                  	<div class="card-img-overlay">
+                  		<div class="card-body">
+							<h4 class="card-text" id="s-1-1">Samsung Camera</h4>
+							<h6 class="card-text a-2">Free Services</h6>
+							<button class="card-text a-2 btn btn-primary rounded-0">Shop Now</button>
+						</div>
+                  	</div>
+				</div>
+			</div>
+			<div class="col-md">
+				<div class="card rounded-0">
+                  	<img class="card-img-top" src="img/sub-banner-5-1.jpg" alt="Card image" >
+                  	<div class="card-img-overlay">
+                  		<div class="card-body">
+							<h4 class="card-text" id="s-1-1">Smart Watches</h4>
+							<h6 class="card-text a-2">Free Services</h6>
+							<button class="card-text a-2 btn btn-primary rounded-0">Shop Now</button>
+						</div>
+                  	</div>
+				</div>
+			</div>
+
+			<div class="col-md">
+				<div class="card rounded-0">
+                  	<img class="card-img-top" src="img/sub-banner-6-1.jpg" alt="Card image" >
+                  	<div class="card-img-overlay">
+                  		<div class="card-body">
+							<h4 class="card-text" id="s-1-1">Headphones</h4>
+							<h6 class="card-text a-2">Free Services</h6>
+							<button class="card-text a-2 btn btn-primary rounded-0">Shop Now</button>
+						</div>
+                  	</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Items -1 -->
+
+	<!-- Items -2 -->
+	<div class="card rounded-0 mt-5 bg-light-dark border-0">
+		<div class="card-body">
+			<div class="container">
+				<div class="row">
+					<div class="col-md">
+						<div class="card rounded-0 bg-purple" style="height: 18.5rem;">
+							<div class="card-body">
+								<center> 
+									<h3 class="text-white" style="margin-top: 5rem">HAND PICK PRODUCTS</h3>
+								</center>
+							</div>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="card rounded-0">
+							<img class="card-img-top" src="img/1-8-1-300x300.jpg" alt="Card image cap">
+							<div class="card-body">
+								
+							</div>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="card rounded-0">
+							<img class="card-img-top" src="img/3-8-1-300x300.jpg" alt="Card image cap">
+							<div class="card-body">
+								
+							</div>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="card rounded-0">
+							<img class="card-img-top" src="img/6-8-1-300x300.jpg" alt="Card image cap">
+							<div class="card-body">
+								<div class="col-md">
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Items -2 -->
+
+	<h2 class="mt-5 text-center"><b>TOP PRODUCTS</b></h2>
+
+	<div class="">
+		<ul class="nav justify-content-center">
+			<li class="nav-item">
+			   <a class="nav-link text-black active"href="#">NEW ARRIVAL</a>
+			</li>
+			<li class="nav-item">
+			   <a class="nav-link text-black" href="#">BEST SELLER</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link text-black" href="#">SPECIAL</a>
+			</li>
+		</ul>
+	</div>
+
+	<!-- Another Item Here -->
+	<div class="container mb-4">
+		<div class="row">
+			<div class="col-md">
+				<div class="card rounded-0">
+					<img src="img/23-4-1-300x300.jpg" class="card-img-top">
+					<div class="card-body">
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-md">
+				<div class="card rounded-0">
+					<img src="img/15-7-1-300x300.jpg" class="card-img-top">
+					<div class="card-body">
+						
+					</div>
+				</div>
+				
+			</div>
+			<div class="col-md">
+				<div class="card rounded-0">
+					<img src="img/34-1-300x300.jpg" class="card-img-top">
+					<div class="card-body">
+						
+					</div>
+				</div>
+				
+			</div>
+			<div class="col-md">
+				<div class="card rounded-0">
+					<img src="img/18-6-1-300x300.jpg" class="card-img-top">
+					<div class="card-body">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Another Item -->
+
+	<!-- Logo Carousel Here -->
+	<!-- Not carousel yet, just fixing some bugs here!!! -->
+	<div class="container-fluid p-4" style="background-color: #EAECEE;"><!-- background color to dark -->
+		<div class="card-fluid container">
+			<div class="card-body">
+				<div class="row">
+					<div class="col-md">
+						<img src="img/m1-1.png" class="img-responsive">
+					</div>
+					<div class="col-md">
+						<img src="img/m2-1.png" class="img-responsive">
+					</div>
+					<div class="col-md">
+						<img src="img/m3-1.png" class="img-responsive">
+					</div>
+					<div class="col-md">
+						<img src="img/m4-1.png" class="img-responsive">
+					</div>
+					<div class="col-md">
+						<img src="img/m5-1.png" class="img-responsive">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Logo Carousel -->
+
+	<h2 class="mt-5 text-center"><b>LATEST NEWS</b></h2>
+
+	<!-- News -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md">
+				<div class="card rounded-0">
+					<img class="card-img rounded-0" src="img/b8-1.jpg"></img>
+					<div class="card-body">
+						<div class="card-text" style="font-family: 'Abel';"><i class="far fa-user"></i> admin <i class="far fa-calendar-times"></i> Dec 15, 2017</div>
+						<div class="card-text" style="font-family: 'Abel';" style=""><b>Link Blog Post</b></div>
+						<div class="card-text f-avel">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						</div>
+						<div class="row">
+							<div class="col-md-10">
+								<hr>
+							</div>
+							<div class="col-md-2">
+								<i class="far fa-comment"></i>
+							</div>
+						</div>
+						<a class="card-text f-avel" href="#" id="read-more">Read More</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md">
+				<div class="card rounded-0">
+					<img class="card-img rounded-0" src="img/b9-1.jpg"></img>
+					<div class="card-body">
+						<div class="card-text f-avel"><i class="far fa-user"></i> admin <i class="far fa-calendar-times"></i> Dec 15, 2017</div>
+						<div class="card-text f-avel"><b>Link Blog Post</b></div>
+						<div class="card-text f-avel">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						</div>
+						<div class="row">
+							<div class="col-md-10">
+								<hr>
+							</div>
+							<div class="col-md-2">
+								<i class="far fa-comment"></i>
+							</div>
+						</div>
+						<a class="card-text f-avel" href="#" id="read-more">Read More</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md">
+				<div class="card rounded-0">
+					<img class="card-img rounded-0" src="img/b10-1.jpg"></img>
+					<div class="card-body">
+						<div class="card-text" style="font-family: 'Abel';"><i class="far fa-user"></i> admin <i class="far fa-calendar-times"></i> Dec 15, 2017</div>
+						<div class="card-text" style="font-family: 'Abel';" style=""><b>Link Blog Post</b></div>
+						<div class="card-text f-avel">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						</div>
+						<div class="row">
+							<div class="col-md-10">
+								<hr>
+							</div>
+							<div class="col-md-2">
+								<i class="far fa-comment"></i>
+							</div>
+						</div>
+						<a class="card-text f-avel" href="#" id="read-more">Read More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End News -->
+
+	<!-- New Footer -->
+	<div class="container-fluid mt-5" style="background-color: #080200;">
+		<div class="container" style="background-color: #080200;">
+			<div class="row">
+
+				<div class="col-md-2 mt-5">
+					<nav id="nav-f" class="nav flex-column mt-n1">
+						<a class="nav-link mt-n1 text-7" href="#" style="margin-top: -1rem;">CATEGORIES</a>
+						<a class="nav-link mt-n1" href="#">Outfits</a>
+						<a class="nav-link mt-n1" href="#">Sunglasses</a>
+						<a class="nav-link mt-n1" href="#">Watches</a>
+						<a class="nav-link mt-n1" href="#">Bags</a>
+						<a class="nav-link mt-n1" href="#">Belts</a>
+					</nav>
+				</div>
+
+				<div class="col-md-2 mt-5">
+					<nav id="nav-f" class="nav flex-column mt-n1">
+						<a class="nav-link mt-n1 text-7" href="#" style="margin-top: -1rem;">INFORMATION</a>
+						<a class="nav-link mt-n1" href="#">About Us</a>
+						<a class="nav-link mt-n1" href="#">Contact Us</a>
+						<a class="nav-link mt-n1" href="#">Sitemap</a>
+						<a class="nav-link mt-n1" href="#">FAQ Page</a>
+						<a class="nav-link mt-n1" href="#">Comming Soon</a>
+					</nav>
+				</div>
+				<div class="col-md-2 mt-5">
+					<nav id="nav-f" class="nav flex-column mt-n1">
+						<a class="nav-link mt-n1 text-7" href="#" style="margin-top: -1rem;">MY ACCOUNT</a>
+						<a class="nav-link mt-n1" href="#">Orders</a>
+						<a class="nav-link mt-n1" href="#">Download</a>
+						<a class="nav-link mt-n1" href="#">Addresses</a>
+						<a class="nav-link mt-n1" href="#">Account Details</a>
+						<a class="nav-link mt-n1" href="#">Logout</a>
+					</nav>
+				</div>
+				<div class="col-md-2 mt-5">
+					<nav id="nav-f" class="nav flex-column mt-n1">
+						<a class="nav-link mt-n1 text-7" href="#" style="margin-top: -1rem;">STORE INFORMATION</a>
+						<a class="nav-link mt-n1" href="#"><i class="fas fa-map-marker"></i> B-14 Collins Street West Victoria 2386</a>
+						<a class="nav-link mt-n1" href="#"><i class="fas fa-mobile-alt"></i> 0123456789</a>
+						<a class="nav-link mt-n1" href="#"><i class="far fa-envelope"></i> Contact@yourcompany.com</a>
+					</nav>
+				</div>
+				<div class="col-md-3 mt-5 ml-5 f-avel">
+					<h5 class="text-white">FOLLOW US</h5>
+					<a class="nav-link mt-n1" href="#">
+						<i class="fab fa-facebook-f"></i>
+						<i class="fab fa-twitter"></i>
+						<i class="fab fa-google-plus-g"></i>
+						<i class="fab fa-youtube"></i>
+						<i class="fab fa-instagram"></i>
+					</a>
+					
+					<h5 class="text-white mt-5">NEWS LETTER</h5>
+					<form class="form-inline">
+			    		<input id="subscribe-form" style="width: 130px;" class="form-control rounded-pill-left" type="text" placeholder="Email">
+			    		<button id="subscribe-btn" class="btn btn-primary my-2 my-sm-0 rounded-pill-right" type="submit" style="width: 20%;"><i class="fas fa-paper-plane"></i></button>
+			  		</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End New Footer -->
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- JQuery Scripts -->
+    <script>
+    	$(document).ready(function(){
+    		//hides the carousel controls
+			$(".carousel-control-prev").hide();
+			$(".carousel-control-next").hide();
+			//hides the rating cards
+			$("#rating-card").hide();
+			$("#action").hide();
+
+			//Toggles the carousel indicators
+			$("#carouselExampleIndicators").hover(function(){
+    			$('.carousel-control-prev').toggle('slide');
+    			$('.carousel-control-next').show('slide', {direction: 'right'}, 1400);
+  			},
+	  			function(){
+			    	$('.carousel-control-prev').hide('slide', {direction: 'left'}, 1400);
+			    	$('.carousel-control-next').hide('slide', {direction: 'right'}, 1400);
+	  			}
+  			);
+
+			// Not working code
+  			$(".carousel-control-prev").hover(function(){
+  				$(".carousel-control-prev").css("backgound-color","#270FF9");
+  			},
+  				function(){
+  					$(".carousel-control-prev").css("backgound-color","#FDFEFE");
+  			});
+  			// End not working code
+
+  			// Icons hover 
+  			$("#ico-1").hover(function(){
+  				$("#ico-1-1").css("color","black").shake(3, 7, 800);
+  			},
+  				function() {
+  					$("#ico-1-1").css("color","grey");
+  				}
+  			);
+  			$("#ico-2").hover(function(){
+  				$("#ico-2-2").css("color", "black");
+  			},
+  				function() {
+  					$("#ico-2-2").css("color", "grey");
+  				}
+  			);
+  			$("#ico-3").hover(function(){
+  				$("#ico-3-3").css("color", "black");
+  			},
+  				function() {
+  					$("#ico-3-3").css("color", "grey");
+  				}
+  			);
+  			//End Icons Hover
+
+  			//Card hover effects
+  			$("#item-1").hover(function(){
+  				$("#rating-card").show();
+  				$("#action").show();
+  				$("#cd-t").hide();
+  			},
+  				function(){
+  					$("#rating-card").hide();
+  					$("#action").hide();
+  					$("#cd-t").show();
+  				}
+  			);
+
+  			//Dropdown menu button
+  			$("#dropdownMenuButtonCategories").click(function(){
+  				$("#dropdownMenuButtonCategories").css("background-color", "white");
+  				$("#dropdownMenuButtonCategories").css("color", "#808B96");
+  				$("#dropdownMenuButtonCategories").css("border", ".1px solid orange");
+  				$("#dropdownMenuButtonCategories").css("box-shadow", "none");
+  			});
+
+  			jQuery.fn.shake = function(intShakes, intDistance, intDuration) {
+    			this.each(function() {
+        		$(this).css("position", "relative"); 
+	        		for (var x = 1; x <= intShakes; x++) {
+	        			$(this).animate({left:(intDistance*-1)}, (((intDuration/intShakes)/4)))
+	    				.animate({left:intDistance}, ((intDuration/intShakes)/2))
+	    				.animate({left:0}, (((intDuration/intShakes)/4)));
+	    			}
+  				});
+				return this;
+			};
+			
+			// Icons cart
+			// icon 1
+			$("#ico-cart").hover(function(){
+				$("#ico-cart").css("background-color", "#1985F1");
+				$("#ico-cart").css("color", "white");
+			},
+				function(){
+					$("#ico-cart").css("background-color", "#EAECEE");
+					$("#ico-cart").css("color", "black");
+				}
+			);
+			// icon 2
+			$("#ico-view").hover(function(){
+				$("#ico-view").css("background-color", "#1985F1");
+				$("#ico-view").css("color", "white");
+			},
+				function(){
+					$("#ico-view").css("background-color", "#EAECEE");
+					$("#ico-view").css("color", "black");
+				}
+			);
+			// icon 3
+			$("#ico-heart").hover(function(){
+				$("#ico-heart").css("background-color", "#1985F1");
+				$("#ico-heart").css("color", "white");
+			},
+				function(){
+					$("#ico-heart").css("background-color", "#EAECEE");
+					$("#ico-heart").css("color", "black");
+				}
+			);
+			// icon 4
+			$("#ico-compare").hover(function(){
+				$("#ico-compare").css("background-color", "#1985F1");
+				$("#ico-compare").css("color", "white");
+			},
+				function(){
+					$("#ico-compare").css("background-color", "#EAECEE");
+					$("#ico-compare").css("color", "black");
+				}
+			);
+
+			// Modal toggle
+			$("#ico-view").click(function() {
+				$('#viewModal').modal('show'); //show the modal
+			});
+
+			// Prevents the carousel from cycling
+			$(".carousel").carousel('pause');
+
+
+		});
+    </script>
+
+</body>
+</html>

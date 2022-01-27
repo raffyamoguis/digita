@@ -1,0 +1,47 @@
+#nav-1 .nav-item a {
+	color: black;
+	font-size: 15px;
+}
+#nav-1 .nav-item a:hover {
+	color: blue;
+}
+#nav-2 a {
+	color: black;
+}
+#nav-2 a:hover {
+	color: blue;
+}
+.row .col-md-4 a {
+	color: black;
+}
+.row .col-md-4 a:hover {
+	color: blue;
+	text-underline-position: none;
+}
+.nav .nav-item .navlink .active {
+	margin-bottom: 2px solid blue;
+}
+
+.f-cantarell {
+	font-family: 'Cantarell', sans-serif;
+}
+.f-didact {
+	font-family: 'Didact Gothic', sans-serif;
+}
+
+/* Font Sizes */
+.f-1 {
+	font-size: 13px;
+}
+
+.f-2 {
+	font-size: 14px;
+}
+
+/* Margins */
+.mt-n1 {
+	margin-top: -1rem !important;
+}
+.mt-n0 {
+	margin-top: -.5rem !important;
+}

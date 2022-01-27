@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--	Font awesome	-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--	Custom CSS 		-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/product.css">
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Cantarell" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+	<title>Product Page - Raffy Shop</title>
+</head>
+<body>
+
+	<nav class="nav bg-dark-light">
+	  <a class="nav-link br-head" style="" >INDIA'S FASTEST ONLINE SHOPPING DESTINATION</a>
+	  <a class="nav-link itm-1" href="#">MY ACCOUNT</a>
+	  <a class="nav-link itm-2" href="#">LOGIN/REGISTER</a>
+	</nav>
+
+	<!-- Just an image -->
+	<nav class="navbar sticky-top navbar-light bg-light p-4">
+	  <a class="navbar-brand" href="">
+	    <img src="img/logo-1-1.png" class="img-responsive logo" alt="Logo">
+	  </a>
+  	 	
+  		<ul class="nav nav-center">
+			<li class="nav-item">
+			   <a class="nav-link text-grey" href="#">HOME</a>
+			</li>
+			<li class="nav-item">
+			   <a class="nav-link text-grey" href="#">SHOP</a>
+			</li>
+			<li class="nav-item">
+			   <a class="nav-link text-grey" href="#">MEDIA</a>
+			</li>
+			<li class="nav-item">
+			   <a class="nav-link text-grey" href="#">BLOG</a>
+			</li>
+			<li class="nav-item">
+			   <a class="nav-link text-grey" href="#">PAGES</a>
+			</li>
+		</ul>
+
+		<ul class="nav m-p">
+			<li class="nav-item">
+			   <a class="nav-link text-grey ico-1" href="#"><i class="far fa-heart"></i></a>
+			</li>
+			<li class="nav-item">
+			   <a class="nav-link text-grey ico-1" href="#"><i class="fas fa-redo"></i></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link ico-1" href="#"><i class="fas fa-shopping-bag"></i></a>
+			</li>
+		</ul>
+	</nav>
+
+	<!-- Navs -->
+	<nav class="navbar navbar-primary bg-primary p-2 justify-content-center">
+		<div class="dropdown mr-3">
+			<button class="btn btn-secondary rounded-0 text-left" type="button" id="dropdownMenuButtonTopCag" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    	<i class="fas fa-bars"></i> TOP CATEGORIES
+			</button>
+			<div class="dropdown-menu rounded-0" aria-labelledby="dropdownMenuButtonTopCag">
+				<a class="dropdown-item" href="#">FASHION</a>
+		    	<a class="dropdown-item" href="#">ELECTRONICS</a>
+		    	<a class="dropdown-item" href="#">BAGS</a>
+		    	<a class="dropdown-item" href="#">MOBILES</a>
+		    	<a class="dropdown-item" href="#">SAREES</a>
+		    	<a class="dropdown-item" href="#">TELEVISION</a>
+		    	<a class="dropdown-item" href="#">SUNGLASSES</a>
+		    	<a class="dropdown-item" href="#">WATCHES</a>
+			</div>
+		</div>
+		<form class="form-inline">
+			<input id="search-navbar" class="form-control rounded-pill-left" type="search" placeholder="Search products .." aria-label="Search">
+			<div class="dropdown">
+  				<button class="btn btn-secondary dropdown-toggle rounded-0" type="button" id="dropdownMenuButtonCategories" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    				All Categories
+  				</button>
+  				<div class="dropdown-menu rounded-0" aria-labelledby="dropdownMenuButton" id="menuButtonCategories">
+    				<a class="dropdown-item" href="#">Uncategorized</a>
+    				<a class="dropdown-item" href="#">Accesories</a>
+    				<a class="dropdown-item" href="#">Bags</a>
+    				<a class="dropdown-item" href="#">Belts</a>
+    				<a class="dropdown-item" href="#">Clothing</a>
+    				<a class="dropdown-item" href="#">Dresses</a>
+    				<a class="dropdown-item" href="#">Electronics</a>
+    				<a class="dropdown-item" href="#">Fashion</a>
+    				<a class="dropdown-item" href="#">Favors</a>
+    				<a class="dropdown-item" href="#">Fitness Equipment</a>
+    				<a class="dropdown-item" href="#">Jewelry</a>
+    				<a class="dropdown-item" href="#">Mobile</a>
+    				<a class="dropdown-item" href="#">Outfits</a>
+    				<a class="dropdown-item" href="#">Sarees</a>
+    				<a class="dropdown-item" href="#">Shoes</a>
+    				<a class="dropdown-item" href="#">Sunglasses</a>
+    				<a class="dropdown-item" href="#">Televesion</a>
+    				<a class="dropdown-item" href="#">Wallet</a>
+    				<a class="dropdown-item" href="#">Watches</a>
+  				</div>
+			</div>
+			<button class="btn btn-dark my-2 my-sm-0 rounded-pill-right" type="submit">
+				<i class="fas fa-search" style="font-size: 16px;"></i>
+			</button>
+		</form>
+		<span id="text-nav" class="navbar-text f-avel ml-3 text-center">
+    		10% on card & Upto 15% cashup
+  		</span>
+	</nav>
+	<!-- End Navs -->
+
+	<nav class="navbar navbar-light bg-light ml-5 f-cantarell">
+  		<span class="navbar-brand mb-0 h1"><b>Maecenas Ullamcorper</b></span>
+  		<!-- Navs -->
+  		<ul id="nav-1" class="nav justify-content-end mr-5">
+		  <li class="nav-item">
+		    <a class="nav-link" href="#">Home</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="#">Fashion</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="#">Outfits</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link disabled" href="#">Maecenas Ullamcorper</a>
+		  </li>
+		</ul>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 mt-4">
+				<div class="card rounded-0">
+					<div class="card-header f-didact border-0 bg-white">
+						PRODUCT CATEGORIES
+						<hr>
+					</div>
+					<div class="card-text f-didact">
+						<nav id="nav-2" class="nav flex-column mt-n1">
+							<a class="nav-link mt-n1" href="#" style="margin-top: -1rem;">Accesories</a>
+							<a class="nav-link mt-n1" href="#">Bags</a>
+							<a class="nav-link mt-n1" href="#">Belts</a>
+							<a class="nav-link mt-n1" href="#">Clothing</a>
+							<a class="nav-link mt-n1" href="#">Dresses</a>
+							<a class="nav-link mt-n1" href="#">Jewelry</a>
+							<a class="nav-link mt-n1" href="#">Wallets</a>
+							<a class="nav-link mt-n1" href="#">Electronics</a>
+							<a class="nav-link mt-n1" href="#">Mobiles</a>
+							<a class="nav-link mt-n1" href="#">Sunglasses</a>
+							<a class="nav-link mt-n1" href="#">Television</a>
+							<a class="nav-link mt-n1" href="#">Fashion</a>
+							<a class="nav-link mt-n1" href="#">Favors</a>
+							<a class="nav-link mt-n1" href="#">Fitness Equipment</a>
+							<a class="nav-link mt-n1" href="#">Outfits</a>
+							<a class="nav-link mt-n1" href="#">Sarees</a>
+							<a class="nav-link mt-n1" href="#">Shoes</a>
+							<a class="nav-link mt-n1" href="#">Uncategorized</a>
+						</nav>
+					</div>
+				</div>
+
+				<div class="card mt-2 rounded-0" style="width: 16rem; height: 20.5rem;">
+					<img class="p-3 card-img-top" src="img/left-banner-1-1.jpg">
+				</div>
+
+				<div class="card mt-2 rounded-0">
+					<div class="card-header f-didact bg-white border-0">
+						Sale Products
+						<hr>
+					</div>
+					<div class="card-body mt-n1">
+						
+						<div class="card border-0"> 
+							<div class="row no-gutters">
+								<div class="col-md-4">
+									<img class="card-img border rounded-0" src="img/28-3-1-300x300.jpg">
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<div class="card-title f-didact mt-n1 f-1">Velit feugiat quam</div>
+										<div class="card-text mt-n1">
+											<span class="fa fa-star" style="font-size: 10px;"></span>
+											<span class="fa fa-star" style="font-size: 10px;"></span>
+											<span class="fa fa-star" style="font-size: 10px;"></span>
+											<span class="fa fa-star" style="font-size: 10px;"></span>
+											<span class="fa fa-star" style="font-size: 10px;"></span>
+										</div>
+										<div class="card-text f-didact f-1">
+											<b>$70.00 - $85.00</b>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="card border-0"> 
+							<div class="row no-gutters">
+								<div class="col-md-4">
+									<img class="card-img border rounded-0" src="img/26-3-1-300x300.jpg">
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<div class="card-title f-didact mt-n1 f-1">Velit feugiat quam</div>
+										<div class="card-text mt-n1">
+											<span class="fa fa-star" style="font-size: 10px;"></span>
+											<span class="fa fa-star" style="font-size: 10px;"></span>
+											<span class="fa fa-star" style="font-size: 10px;"></span>
+											<span class="fa fa-star" style="font-size: 10px;"></span>
+											<span class="fa fa-star" style="font-size: 10px;"></span>
+										</div>
+										<div class="card-text f-didact f-1">
+											<b>$20.00 - $49.00</b>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+
+						<div class="card border-0"> 
+							<div class="row no-gutters">
+								<div class="col-md-4">
+									<img class="card-img border rounded-0" src="img/22-4-1-300x300.jpg">
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<div class="card-title f-didact mt-n1 f-1">Velit feugiat quam</div>
+										<div class="card-text mt-n1">
+											<span class="fa fa-star" style="font-size: 10px;"></span>
+											<span class="fa fa-star" style="font-size: 10px;"></span>
+											<span class="fa fa-star" style="font-size: 10px;"></span>
+											<span class="fa fa-star" style="font-size: 10px;"></span>
+											<span class="fa fa-star" style="font-size: 10px;"></span>
+										</div>
+										<div class="card-text f-didact f-1">
+											<del>$58.00</del> - <b>$35.00</b>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+
+						<div class="card border-0"> 
+							<div class="row no-gutters">
+								<div class="col-md-4">
+									<img class="card-img border rounded-0" src="img/21-4-1-300x300.jpg">
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<div class="card-title f-didact mt-n1 f-1">Velit feugiat quam</div>
+										<div class="card-text mt-n1">
+											<span class="fa fa-star" style="font-size: 10px;"></span>
+											<span class="fa fa-star" style="font-size: 10px;"></span>
+											<span class="fa fa-star" style="font-size: 10px;"></span>
+											<span class="fa fa-star" style="font-size: 10px;"></span>
+											<span class="fa fa-star" style="font-size: 10px;"></span>
+										</div>
+										<div class="card-text f-didact f-1">
+											<del>$100.00</del> - <b>$90.00</b>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-9 mt-4">
+				
+				<div class="row">
+					<div class="col-md-5">
+						<img class="img-responsive border rounded-0" src="img/17-7-1-300x300.jpg">
+					</div>
+					<div class="col-md-6">
+						<h2 class="f-cantarell"><b>Nascetur Ridiculus Mus</b></h2>
+						<h5 class="f-cantarell mt-2"><del>£30.00</del> <b>£25.00</b></h5>
+						<p class="f-didact mt-4">Semper imperdiet aenean commodo aliquet. Venenatis purus.Aliquam. Nunc sodales ante 	ornare gravida dapibus vestibulum eros nulla varius.Sollicitudin dictum rutrum sed aliquam venenatis adipiscing porttitor cum accumsan purus litora.
+						</p>
+
+						<input class="form-control rounded-0" type="text" style="width: 50px;">
+						<!-- Controls here -->
+
+						<div class="row f-didact mt-2">
+							<div class="col-md-4">
+								<a onclick="" class="f-1"><i class="far fa-heart"></i> Add To Wishlist</a>
+							</div>
+							<div class="col-md-4">
+								<a onclick="" class="f-1"><i class="fas fa-chart-pie"></i> Compare</a>
+							</div>
+							<div class="col-md-4">
+								<a onclick="" class="f-1"><i class="fas fa-ruler"></i> Size Guide</a>
+							</div>
+						</div>
+
+						<h6 class="f-didact mt-2"><b>SKU:</b> PRDO3</h6>
+						<h6 class="f-didact mt-2"><b>Categories:</b> Clothing, Electronics, Jewelry, Sarees, Watches</h6>
+						<h6 class="f-didact mt-2"><b>Tags:</b> Ante, Natoque, Quam</h6>
+						<h6 class="f-didact mt-2"><b>Brand:</b> Retro</h6>
+
+						<i class="fab fa-facebook mt-3" style="color: #2980B9; font-size: 30px;"></i>
+						<i class="fab fa-twitter-square mt-3" style="color: #5DADE2; font-size: 30px;"></i>
+						<i class="fab fa-linkedin-in mt-3" style="color: #1A5276; font-size: 30px;"></i>
+						<i class="fab fa-google-plus-g mt-3" style="color: #922B21; font-size: 30px;"></i>
+						<i class="fab fa-stumbleupon-circle mt-3" style="color: #E74C3C; font-size: 30px;"></i>
+						<i class="fab fa-pinterest-square mt-3" style="color: #B03A2E; font-size: 30px;"></i>
+						<i class="fab fa-tumblr-square mt-3" style="color: #154360; font-size: 30px;"></i>
+					</div>
+				</div>
+
+				<div class="card text-center mt-5 rounded-0">
+				  	<div class="card-header bg-white">
+				    	<ul class="nav nav-tabs card-header-tabs border-0">
+				      		<li class="nav-item">
+				        		<a class="nav-link active border-0 border-bottom" href="#">DESCIPTION</a>
+				      		</li>
+				      		<li class="nav-item">
+				        		<a class="nav-link" href="#">REVIEW</a>
+				      		</li>
+				    	</ul>
+				  	</div>
+				  	<div class="card-body">
+				    	<h5 class="card-title">Special title treatment</h5>
+				    	<p class="card-text">
+				    		With supporting text below as a natural lead-in to additional content.
+				    	</p>
+				    	<a href="#" class="btn btn-primary">Go somewhere</a>
+				  	</div>
+				</div>
+
+				<h3 class="text-center f-didact mt-5"><b>RELATED PRODUCTS</b></h3>
+
+				<div class="row">
+					<div class="col-md">
+						<div class="card rounded-0">
+							<img src="img/12-7-1-300x300.jpg" class="card-img-top">
+							<div class="card-body">
+								
+							</div>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="card rounded-0">
+							<img class="card-img-top" src="img/27-3-1-300x300.jpg">
+							<div class="card-body">
+								
+							</div>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="card rounded-0">
+							<img src="img/24-4-1-300x300.jpg" class="card-img-top">
+							<div class="card-body">
+								
+							</div>
+						</div>
+					</div>
+					<div class="col-md">
+						<div class="card rounded-0">
+							<img src="img/24-4-1-300x300.jpg" class="card-img-top">
+							<div class="card-body">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Navbar down -->
+	<nav class="navbar navbar-primary bg-primary mt-5 justify-content-center">
+		<span class="navbar-text text-white f-avel ml-5" id="text-footer">
+			SUBSCRIBE TO OUR NEWS LETTER
+		</span>
+		<form class="form-inline ml-5">
+    		<input id="subscribe-form" class="form-control rounded-pill-left" type="text" placeholder="Email">
+    		<button id="subscribe-btn" class="btn btn-dark my-2 my-sm-0 rounded-pill-right" type="submit">Subscribe!</button>
+  		</form>
+     	<!-- -->
+	</nav>
+	<!-- End Navbar down -->
+
+	<!-- Footer -->
+	<div class="container-fluid bg-dark">	
+	<div class="container bg-dark">
+		<div class="row">
+			<div class="col-md mt-5">
+				<img src="img/footer-logo-1-1.png">
+				<p class="f-avel text-light mt-2">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+			</div>
+			<div class="col-md mt-5">
+				<nav id="nav-f" class="nav flex-column mt-n1">
+					<a class="nav-link mt-n1 text-7" href="#" style="margin-top: -1rem;">CATEGORIES</a>
+					<a class="nav-link mt-n1" href="#">Outfits</a>
+					<a class="nav-link mt-n1" href="#">Sunglasses</a>
+					<a class="nav-link mt-n1" href="#">Watches</a>
+					<a class="nav-link mt-n1" href="#">Bags</a>
+					<a class="nav-link mt-n1" href="#">Belts</a>
+				</nav>
+			</div>
+			<div class="col-md mt-5">
+				<nav id="nav-f" class="nav flex-column mt-n1">
+					<a class="nav-link mt-n1 text-7" href="#" style="margin-top: -1rem;">INFORMATION</a>
+					<a class="nav-link mt-n1" href="#">About Us</a>
+					<a class="nav-link mt-n1" href="#">Contact Us</a>
+					<a class="nav-link mt-n1" href="#">Sitemap</a>
+					<a class="nav-link mt-n1" href="#">FAQ Page</a>
+					<a class="nav-link mt-n1" href="#">Comming Soon</a>
+				</nav>
+			</div>
+			<div class="col-md mt-5">
+				<nav id="nav-f" class="nav flex-column mt-n1">
+					<a class="nav-link mt-n1 text-7" href="#" style="margin-top: -1rem;">MY ACCOUNT</a>
+					<a class="nav-link mt-n1" href="#">Orders</a>
+					<a class="nav-link mt-n1" href="#">Download</a>
+					<a class="nav-link mt-n1" href="#">Addresses</a>
+					<a class="nav-link mt-n1" href="#">Account Details</a>
+					<a class="nav-link mt-n1" href="#">Logout</a>
+				</nav>
+			</div>
+			<div class="col-md mt-5">
+				<nav id="nav-f" class="nav flex-column mt-n1">
+					<a class="nav-link mt-n1 text-7" href="#" style="margin-top: -1rem;">STORE INFORMATION</a>
+					<a class="nav-link mt-n1" href="#"><i class="fas fa-map-marker"></i> B-14 Collins Street West Victoria 2386</a>
+					<a class="nav-link mt-n1" href="#"><i class="fas fa-mobile-alt"></i> 0123456789</a>
+					<a class="nav-link mt-n1" href="#"><i class="far fa-envelope"></i> Contact@yourcompany.com</a>
+					<a class="nav-link mt-n1" href="#">
+						<i class="fab fa-facebook-f"></i>  <i class="fab fa-twitter"></i>  <i class="fab fa-google-plus-g"></i>  <i class="fab fa-youtube"></i>  <i class="fab fa-instagram"></i>
+					</a>
+				</nav>
+			</div>
+		</div>
+	</div>
+	</div>
+	<!-- End footer -->
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

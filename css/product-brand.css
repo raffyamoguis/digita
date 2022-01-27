@@ -1,0 +1,26 @@
+.f-cantarell {
+	font-family: 'Cantarell', sans-serif;
+}
+.f-didact {
+	font-family: 'Didact Gothic', sans-serif;
+}
+/* Margins */
+.mt-n1 {
+	margin-top: -1rem !important;
+}
+.mt-n0 {
+	margin-top: -0.1rem !important;
+}
+#nav-1 .nav-item a {
+	color: black;
+	font-size: 15px;
+}
+#nav-1 .nav-item a:hover {
+	color: blue;
+}
+#nav-2 a {
+	color: black;
+}
+#nav-2 a:hover {
+	color: blue;
+}
